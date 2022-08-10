@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <title>Instagram Clone</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+      <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+      />
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <nav class="header__content">
+        <div class="header__buttons">
+              <p>Social Gallery</p>
+        </div>
+        <div class="header__search">
+          <input type="text" placeholder="Search" />
+          <i class='bx bx-search-alt-2' ></i>
+        </div>
+
+        <div class="header__buttons header__buttons--desktop">
+          <a href="#">
+            <img src="/icons/chat_btn.png" alt="">
+          </a>
+          </a>
+          <a href="#">
+            <img src="/icons/video_btn.png" alt="">
+          </a>
+          <a href="#">
+            <img src="./icons/love.png" alt="">
+          </a>
+          <button class="profile-button">
+            <div class="profile-button img">
+              <img src="./icons/user.png" alt="User Picture" />
+            </div>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main Contents -->
+    <main class="main-container">
+      <section class="content-container">
+        <div class="content">
+          <div class="posts">
+            
+            <!-- Content -->
+            <article class="post">
+              <div class="post__header">
+                <div class="post__profile">
+                    <a href="#" class="post__avatar">
+                    <img src="icons/user.png" alt="User Picture" />
+                    </a>
+                    <span>user1</span>
+                </div>
+              </div>
+
+              <div class="post__content">
+                <div class="post__medias">
+                  <img class="post__media" src="./img/Main_contents.jpg"/>
+                </div>
+              </div>
+
+              <div class="post__footer">
+                <div class="post__buttons">
+                  <button class="post__button">
+                    <img src="./icons/chat_btn.png" alt="">
+                  </button>
+                  <button class="post__button">
+                      <img src="./icons/love_btn.png" alt="">
+                  </button>
+
+                  <button class="post__button post__button--align-right">
+                    <img src="./icons/more_btn.png" alt="">
+                  </button>
+                </div>
+
+                <div class="post__infos">
+                  <div class="post__title">
+                    <span>제목을 입력해주세요</span>
+                  </div>
+
+                  <div class="post__description">
+                    <span>내용을 입력해주세요</span>
+                  </div>
+
+                  <span class="post__date-time">more</span>
+                </div>
+              </div>
+            </article>
+            
+            <!-- Content2 -->
+            <article class="post">
+              <div class="post__header">
+                <div class="post__profile">
+                    <a href="#" class="post__avatar">
+                    <img src="icons/user.png" alt="User Picture" />
+                    </a>
+                    <span>user1</span>
+                </div>
+              </div>
+
+              <div class="post__content">
+                <div class="post__medias">
+                  <img class="post__media" src="./img/Main_contents.jpg"/>
+                </div>
+              </div>
+
+              <div class="post__footer">
+                <div class="post__buttons">
+                  <button class="post__button">
+                    <img src="./icons/chat_btn.png" alt="">
+                  </button>
+                  <button class="post__button">
+                      <img src="./icons/love_btn.png" alt="">
+                  </button>
+
+                  <button class="post__button post__button--align-right">
+                    <img src="./icons/more_btn.png" alt="">
+                  </button>
+                </div>
+
+                <div class="post__infos">
+                  <div class="post__title">
+                    <span>제목을 입력해주세요</span>
+                  </div>
+
+                  <div class="post__description">
+                    <span>내용을 입력해주세요</span>
+                  </div>
+
+                  <span class="post__date-time">more</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <!-- Side Menu -->
+        <section class="side-menu">
+          <div class="side-menu__title">
+            <div class="side-menu__title_info">
+              <a>일상 Gallery</a>
+              <span></span>
+            </div>
+          </div>
+          <!-- 제목 -->
+          <div class="side-menu__title-section">
+            <div class="side-menu__title-header">
+              <h2>전체 게시글</h2>
+              <button>See All</button>
+            </div>
+            <!--세부 내용 -->
+            <div class="side-menu__title-content">
+              <div class="side-menu__recommend">
+                <a href="#" class="side-menu__avatar">
+                  <img src="./icons/user.png" alt="User Picture" />
+                </a>
+                <div class="side-menu__recommend_info">
+                  <a href="#">카페에 다녀오고..</a>
+                  <span>동해물과 백두산이 마르고</span>
+                </div>
+                <button class="side-menu__button">보기</button>
+              </div>
+
+              <div class="side-menu__title-content">
+                <div class="side-menu__recommend">
+                  <a href="#" class="side-menu__avatar">
+                    <img src="./icons/user.png" alt="User Picture" />
+                  </a>
+                  <div class="side-menu__recommend_info">
+                    <a href="#">애국가</a>
+                    <span>동해물과 백두산이 마르고</span>
+                  </div>
+                  <button class="side-menu__button">보기</button>
+                </div>
+              
+            </div>
+          </div>
+          <!-- footer -->
+          <div class="side-menu__footer">
+            <div class="side-menu__footer_links">
+              <ul class="side-menu__footer_list">
+                <li class="side-menu__footer_item">
+                  <a class="side-menu__footer_link" href="#">About</a>
+                </li>
+                <li class="side-menu__footer_item">
+                  <a class="side-menu__footer_link" href="#">Help</a>
+                </li>
+                <li class="side-menu__footer_item">
+                  <a class="side-menu__footer_link" href="#">API</a>
+                </li>
+                <li class="side-menu__footer_item">
+                  <a class="side-menu__footer_link" href="#">Privacy</a>
+                </li>
+                <li class="side-menu__footer_item">
+                  <a class="side-menu__footer_link" href="#">Terms</a>
+                </li>
+                <li class="side-menu__footer_item">
+                  <a class="side-menu__footer_link" href="#">Language</a>
+                </li>
+              </ul>
+            </div>
+            <span class="side-menu__footer_copyright">
+              &copy; 2022 Social Gallery
+            </span>
+          </div>
+        </section>
+      </section>
+    </main>
+  </body>
+</html>

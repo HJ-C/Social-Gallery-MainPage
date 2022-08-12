@@ -79,7 +79,6 @@ textarea {
 .header__search {
   width: 216px;
   height: 28px;
-
   display: none;
   align-items: center;
   position: relative;
@@ -87,7 +86,6 @@ textarea {
 .header__search i {
   width: 12px;
   height: 12px;
-
   position: absolute;
   left: 8px;
 }
@@ -203,7 +201,14 @@ textarea {
 .post__profile span:hover {
   text-decoration: underline;
 }
-
+.post__profile button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    padding-left: 470px;
+    font-weight: 900;
+}
 
 
 .post__content {
@@ -256,9 +261,16 @@ textarea {
   padding: 0 8px;
   gap: 10px;
 }
-.post__title,
+.post__title{
+  display: flex;
+}
 .post__description {
   display: flex;
+  padding-bottom: 20px;
+}
+.post__border{
+  border-bottom: 1px solid var(--story-border);
+  width: 100%;
 }
 .post__title {
   align-items: center;
@@ -276,6 +288,40 @@ textarea {
   text-transform: uppercase;
 }
 
+.comment_list li{
+  list-style: none;
+}
+.post_comment_wrap{
+  margin-left: 10px;
+  font-size: 13px;
+}
+.post_comment_wrap input{
+  border: none;
+  width: 90%;
+  height: 40px;
+  font-size: 15px;
+  margin-left: 10px;
+}
+.post_comment_wrap input:focus{
+  outline: none;
+}
+.post_comment_wrap button{
+  border-style: none;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.user_desc{
+  padding-top: 10px;
+}
+.user_desc em {
+  font-size: 13px;
+  font-weight: 500;
+}
+.user_desc span{
+  padding-left: 20px;
+  font-size : 13px;
+}
 
 /* Side Menu */
 .side-menu {
@@ -341,6 +387,7 @@ textarea {
   font-weight: 900;
   color: var(--point);
 }
+
 
 .side-menu__title-content {
   display: flex;

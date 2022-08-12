@@ -10,3 +10,5 @@ toggle.addEventListener('click',()=>{
 searchBtn.addEventListener('click',()=>{
     sidebar.classList.remove('close')
 })
+
+
